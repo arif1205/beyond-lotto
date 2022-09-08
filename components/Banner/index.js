@@ -1,12 +1,16 @@
 import React from "react";
-import Image from "next/image";
-import { Container } from "./Banner.styles";
-import bannerbg from "../../images/banner-bg.png";
+import { BannerContent, Container, UpperContainer } from "./Banner.styles";
+import Navbar from "../Navbar";
 
 const Banner = () => {
 	return (
-		<Container bannerbg={bannerbg}>
-			{/* <Image src={bannerbg} alt='' /> */}
+		<Container className='banner-container'>
+			<UpperContainer className='upper-banner-container'>
+				<Navbar />
+				<BannerContent>
+					<h1>Free your counter space, increase lottery sales</h1>
+				</BannerContent>
+			</UpperContainer>
 		</Container>
 	);
 };
